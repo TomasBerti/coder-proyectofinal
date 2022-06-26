@@ -64,6 +64,7 @@ nav ul li a:hover {
     width: 350px;
     padding-top: 40px;
     padding-bottom: 40px;
+    overflow:hidden;
     
 }
 
@@ -329,4 +330,24 @@ form {
     .paginservice h2 {
         font-size: 40px;
     }
+}
+
+
+/*animaciones*/
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+}
+
+.foto1index:hover {
+    -webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;
 }
