@@ -1,687 +1,332 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-main {
-    background-color:rgb(109, 175, 102) ;
+
+body {
+    background-color: rgb(146, 228, 146);
 }
 
-/* ----- NAVEGADOR ----- */
+.contenedor1 {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+    grid-template-rows: 40px auto 40px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
 
 nav {
+    display: flex;
+    justify-content: flex-end;
     background-color: black;
-    width: 100%;
-    height: 60px;
-    text-align: right;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 10px 20px;
-    padding-top: 10px;
+    list-style: none;
+    padding: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(79, 117, 75);
-    font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;   
+    color: white;
+}
+nav ul li a:hover {
+    color: rgb(146, 228, 146);
 }
 
-nav ul li a:hover{
-    color: rgb(142, 188, 156);
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-
-/* ----- NAVEGADOR ----- */
-
-/* ----- FOOTER ----- */
-
-
-footer {
-    background-color: black;
-    width: 100%;
-    height: 60px;
-    color: rgb(79, 117, 75);
-    font-family: 'Ubuntu', sans-serif;
-    padding-top: 20px;
-}
-
-footer p {
-    display: inline;
-}
-
-.footerconsulta {
-    margin-right: 800px;
-    padding-left: 20px;
-}
-.footerredes  {
-    margin-left: 50px;  
-    padding-right: 40px;
-}
-
-.footerinstagram {
-    padding-right: 40px;
-}
-
-footer p:hover {
-    color: rgb(142, 188, 156);
-}
-
-
-/* ----- FOOTER ----- */
-
-/* ----- INDEX ----- */
-
-/* ----- SECTION 1----- */
-
-/*
-.section1 {
-    background-color: rgb(4, 4, 4);
-    color: rgb(194, 183, 183);
-}
-.fotosection1 {
-    display: inline-block; 
-    vertical-align: top;
-}
-
-.foto1index {
-    width: 400px;
-    height: 500px;
-    margin-top: 100px;
-    margin-left: 80px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
-
-.textosection1 {
-    display: inline-block;
-    margin-top: 140px;
-    width: 50%;
+.section img {
+    width: 350px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
 }
 
 h1 {
-    text-align: center;
-    font-size: 80px;
-    color:rgb(79, 117, 75) ;
-    padding-bottom: 30px;
-}
-
-section div p {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.p1 {
-    font-size: 45px;
-    padding-left: 20px;
-}
-
-.p2 {
-    font-size: 35px;
-    padding-left: 20px;
-    padding-top: 15px;
-}
-
-.p3 {
-    font-size: 45px;
-    padding-left: 300px;
-    color:rgb(79, 117, 75) ; 
-}
-
-.p4 {
-    font-size: 30px;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-*/
-
-/* ----- SECTION 1----- */
-
-/* ----- SECTION 2----- */
-
-/*
-.section2  {
-    display: flex;
-    width: 100%;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 500px;
-}
-
-.servicio1 .servicio2 .servicio3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.servicio1 {
-    margin-left: 80px;
-    
-}
-
-.servicio2 {
-    margin-left: 200px;
-    
-}
-
-.servicio3 {
-    margin-right: 30px;
-    margin-left: 250px;
-    
-}
-
-.section2 img {
-    width: 300px;
-    height: 300px;
-}
-
-.section2 h5 {
-    padding: 30px;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-*/
-
-/* ----- SECTION 2----- */
-
-/* ----- INDEX ----- */
-
-/* ----- GALERIA ----- */
-
-/*
-
-.galeria {
-    background-color: rgb(4, 4, 4);
-}
-.titulogaleria {
     font-size: 50px;
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(79, 117, 75);
-    text-align: center;
-    padding: 30px 0px 30px 0px;
-}
-
-.fotosgaleria img {
-    width: 500px;
-    height: 400px;
-    border-radius: 30px;
+    font-family: ubuntu;
     padding: 10px;
 }
-
-.fotosgaleria .img1 {
-    width: 450px;
-    height: 600px;
+.section-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: ubuntu;
 }
 
-.fotosgaleria .img2 {
-    width: 400px;
-    height: 700px;
-    vertical-align: top;
+.section-texto p {
+    padding: 5px;
 }
 
-.fotosgaleria .img3 {
-    width: 650px;
-    height: 400px;
-    vertical-align: top;
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color:white;
+}
+/* servicios */
+
+.contenedor3 {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "header"
+    "servicios"
+    "footer";
+    grid-template-rows: 40px auto 40px;
+
+} 
+.header {
+    grid-area: header;
+}
+.paginservice {
+    grid-area: servicios;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1200px;
+}
+footer {
+    grid-area: footer;
 }
 
-.fotosgaleria .img4 {
-    width: 450px;
-    height: 700px;
-    vertical-align: top;
-}
-
-.fotosgaleria .img5 {
-    width: 400px;
-    height: 600px;
-    vertical-align: top;
-}
-
-.fotosgaleria .img6 {
-    width: 650px;
-    height: 450px;
-    vertical-align: top;
-}
-
-.fotosgaleria .img7 {
-    width: 400px;
-    height: 550px;
-}
-*/
-
-/* ----- GALERIA ----- */
-
-/* ----- SERVICIOS ----- */
-
-.serv h2 {
-    display: inline-block;
-    font-size: 30px;
-    color: whitesmoke;
-    padding-top: 100px;
-    padding-bottom: 20px;
-}
-
-.fotoserv1 {
-    display: inline-block;
-    padding-left: 30px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    vertical-align: top;
+.serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .servicio {
-    display: inline-block;
-    padding-left: 30px;
-}
-
-.foto {
-    width: 400px;
-    height: 300px;
-    border-radius: 30px;
-}
-
-.serv p {
-    font-size: 17px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-
-
-/* ----- SERVICIOS ----- */
-
-
-/* ----- SOBRE MI ----- */
-
-
-
-.fotomia {
-    width: 500px;
-    height: 700px;
-    margin-left: 500px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
-.sobremiparte1 {
-    margin-left: 250px;
-    font-size: 25px;
-    margin-bottom: 40px;
-}
-
-.sobremiparte1 span {
-    font-size: 50px;
-    color: whitesmoke;
-}
-
-.sobremiparte1 h2 {
-    margin-left: 90px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.tomasberti {
-    padding-left: 250px;
-    padding-top: 20px;
-    font-size: 50px;
-}
-
-.sobremiparte1 p {
-    font-size: 35px;
-    font-family: 'Ubuntu', sans-serif;
-    margin-left: 60px;
-}
-
-.sobremititulo {
-    font-size: 30px;
-    margin-left: 670px;
-    font-family: 'Ubuntu', sans-serif;
-    color: whitesmoke;
-    margin-bottom: 20px;
-}
-
-.sobremi {
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-
-.sobremiizquierda {
-    margin-left: 150px;
-    font-size: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    display: inline-block;
-}
-
-.sobremiderecha {
-    display: inline-block;
-    margin-left: 600px;
-    font-size: 25px;
-    font-family: 'Ubuntu', sans-serif;
-} 
-
-/* ----- SOBRE MI ----- */
-
-
-/* ----- CONSULTAS ----- */
-
-.frase {
-    font-size: 45px;
-    padding: 30px 0px 200px 250px;
-}
-
-.frasep2 {
-    margin-left: 400px;
-}
-
-.pregunta1 {
-    padding-left: 300px;
-    font-size: 35px;
-    color: whitesmoke;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.acaestoy {
     text-align: center;
-    font-size: 40px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
-.pregunta2 {
-    padding-left: 200px;
+.paginservice img {
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+.paginservice p {
     padding-top: 10px;
-    padding-bottom: 40px;
-    font-size: 33px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: ubuntu;
+}
+/*servicios*/
+/*galeria*/
+.galeria img {
+    width: 200px;
+    object-fit: cover;
+    padding: 2px;
+    border-radius: 20px;
 }
 
-.correo {
-    padding-left: 200px;
-    padding-bottom: 40px;
-    font-size: 33px;
-    font-family: 'Ubuntu', sans-serif;
-    color: whitesmoke;
+.galeria h2 {
+    text-align: center;
+    padding:10px;
 }
 
-.contacto {
-    padding-left: 400px;
-    padding-bottom: 50px;
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
 }
+.galeria-item {
+    display: flex;
+    
+}
+/*galeria*/
+/*sobremi*/
 
+.sobremi img {
+    width: 500px;
+    padding: 30px;
+    
+}
+.sobremi h2 p h3 {
+    text-align: center;
+}
+/*sobremi*/
+/*consultas*/
+
+.consultas {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.consultas p {
+    font-size: 30px;
+}
 form {
-    width: 600px;
-    height: 300px;
-    padding: 20px 30px;
-    border: solid 2px black;
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4) ;
+    padding: 10px 20px;
     box-sizing: border-box;
+    margin-top:80px;
     border-radius: 7px;
+    margin-bottom: 150px;
+
+}
+.contacto {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
 }
 
 .inputcontact {
     width: 100%;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 7px;
     box-sizing: border-box;
     font-size: 17px;
     border: none;
 
 }
-.inputboton {
-    width: 100%;
-    background-color: black;
-    color: rgb(79, 117, 75);
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 20px;
-}
-
 #boton {
+    background: #31384A ;
+    color: white;
     text-align: center;
-    border: 1px solid rgb(79, 117, 75);
+    border: 1px solid aqua;
     padding: 20px;
 }
 
 #boton:hover {
     cursor: pointer;
-    color: white;
-
-} 
-
-/* ----- CONSULTAS ----- */
-
-
-/* ----- index grid ----- */
-
-.contenedor1 {
-    display: grid;
-    width: 100%;
-    grid-template-columns: auto;
-    grid-template-rows: 100px 700px 600px 70px;
 
 }
-
-.navegador {
-    height: 100px;
-    background-color: black;
-
-}
-.navegador ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    margin: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: rgb(79, 117, 75);
-    font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;   
-}
-
-nav ul li a:hover{
-    color: rgb(142, 188, 156);
-}
-
-.section1 {
-    display: flex;
-    background-color: rgb(4, 4, 4);
-    color: rgb(194, 183, 183);
-    justify-content: space-around;
+/*consultas*/
 
 
-}
-.section1 img {
-    width: 500px;
-    border-radius: 10px;
-    margin-left: 100px;
-}
 
-h1 {
-    text-align: center;
-    font-size: 80px;
-    color:rgb(79, 117, 75) ;
-    padding-bottom: 30px;
-}
+@media (min-width: 1024px) {
+    .contenedor1 {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+        grid-template-rows: 60px auto 60px;
+    }
 
-.textosection1 {
-    margin-right: 150px;
-    margin-top: 100px;
-}
-
-section div p {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.p1 {
-    font-size: 45px;
-    padding-left: 20px;
-}
-
-.p2 {
-    font-size: 35px;
-    padding-left: 20px;
-    padding-top: 15px;
-}
-
-.p3 {
-    font-size: 45px;
-    padding-left: 300px;
-    color:rgb(79, 117, 75) ; 
-}
-
-.p4 {
-    font-size: 30px;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-
-.section2 {
-    display: flex;
-    background-color:rgb(79, 117, 75) ; 
-    justify-content: space-around;
-    color: aliceblue;
-    padding-top: 50px;
-}
-
-.section2 img {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-}
-
-.section2 h5 {
-    font-size: 20px;
-    text-align: center;
-}
-.section2 .servicio2 img {
-    margin-top: 100px;
-}
-
-.footer {
-    background-color: black;
-    color:rgb(79, 117, 75);
-}
-
-.footerindex {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-}
-
-.footerconsulta {
-    margin-right: 800px;
-}
-
-
-/* ----- index grid ----- */
-
-/* ----- galeria grid ----- */
-
-.contenedor2 {
-    display: grid;
-    width: 100%;
-    height: 1000px;
-    grid-template-areas: 
-                        "header"
-                        "galeria"
-                        "footer"; 
-    grid-template-columns: auto;
-
-}
-
-.c1 {
-    grid-area: header;
-}
-
-.c2 {
-    grid-area: galeria;
-}
-
-.c3 {
-    grid-area: footer;
-}
-
-.titulogaleria {
-    background-color: black;
-    color:rgb(79, 117, 75);
-    text-align: center;
-    font-size: 40px;
-}
-
-.galeria-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 400px;
-    padding: 20px;
-    grid-gap: 10px;
-    background-color: black;
-}
-
-.galeria-img {
-    width: 100%;
-    height: 100%;
-} 
-
-.galeria-item:nth-child(4) {
-    grid-row-start: span 2;
-}
-
-.galeria-item:nth-child(7) {
-    grid-row-start: span 2;
-}
-
-@media (max-width:320px) {
-    .galeria-container {
-        grid-template-columns: repeat(2,1fr);
+    .header {
+        grid-area: header;
     }
     
+    .section {
+        grid-area: section;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        background-color: black;
+        height: 60px;
+    }
+    nav ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        list-style: none;
+        padding: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        color: rgb(146, 228, 146);
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .section-texto p {
+        font-size: 20px;
+
+    }
+    .section img {
+        width: 450px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        color:white;
+        font-size: 20px;
+    }
+
+    /* servicios */
+
+    .paginservice {
+        display: flex;
+        align-items: center;
+        height: 1500px;
+    }
+    .serv {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    .paginservice img {
+        width: 300px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+    
+    .paginservice p {
+        padding-top: 40px;
+        font-family: ubuntu;
+        font-size: 25px;
+    }
+    .paginservice h2 {
+        font-size: 40px;
+    }
 }
-
-.navegadorgaleria {
-    height: 100px;
-    background-color: rgb(4, 4, 4);
-
-}
-.navegadorgaleria ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navegadorgaleria ul li {
-    margin: 20px;
-}
-
-.navegadorgaleria nav ul li a {
-    text-decoration: none;
-    color: rgb(79, 117, 75);
-    font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;   
-}
-
-.navegadorgaleria nav ul li a:hover{
-    color: rgb(142, 188, 156);
-}
-
-.footergaleria {
-    background-color: rgb(4, 4, 4);
-    color:rgb(79, 117, 75);
-}
-
-.footerindex {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-}
-
-.footerconsulta {
-    margin-right: 800px;
-}
-
-
