@@ -16,7 +16,7 @@ body {
     "header"
     "section"
     "footer";
-    grid-template-rows: 40px auto 40px;
+    grid-template-rows: 60px auto 40px;
 }
 
 .header {
@@ -35,7 +35,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     background-color: black;
-    height: 40px;
+    height: 60px;
 }
 
 nav ul {
@@ -46,6 +46,7 @@ nav ul li {
     list-style: none;
     padding: 10px;
 }
+
 
 nav ul li a {
     text-decoration: none;
