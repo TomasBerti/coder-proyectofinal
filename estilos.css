@@ -16,7 +16,7 @@ body {
     "header"
     "section"
     "footer";
-    grid-template-rows: 40px auto 40px;
+    grid-template-rows: 60px auto 40px;
 }
 
 .header {
@@ -31,11 +31,15 @@ footer {
     grid-area: footer;
 }
 
+.colorletra {
+    color: white;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
     background-color: black;
-    height: 40px;
+    height: 60px;
 }
 
 nav ul {
@@ -46,6 +50,7 @@ nav ul li {
     list-style: none;
     padding: 10px;
 }
+
 
 nav ul li a {
     text-decoration: none;
@@ -92,6 +97,18 @@ footer {
     background-color: black;
     color:white;
 }
+
+.contenedor2 {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "header"
+    "servicios"
+    "footer";
+    grid-template-rows: 40px auto 40px;
+
+} 
 /* servicios */
 
 .contenedor3 {
@@ -141,7 +158,7 @@ footer {
 /*servicios*/
 /*galeria*/
 .galeria img {
-    width: 200px;
+    width: 150px;
     object-fit: cover;
     padding: 2px;
     border-radius: 20px;
@@ -149,7 +166,8 @@ footer {
 
 .galeria h2 {
     text-align: center;
-    padding:10px;
+    padding:30px;
+    margin-bottom: 100px;
 }
 
 .galeria-container {
@@ -187,7 +205,7 @@ footer {
 .consultas p {
     font-size: 30px;
 }
-form {
+.form {
     width: 450px;
     margin: auto;
     background: rgba(0,0,0,0.4) ;
